@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./fonts.scss";
+
+@layer base {
+  :root {
+    --white: #fff;
+    --body: #f9f9f9;
+    --primary: #ff7010;
+    --black: #191919;
+    --red: #e23535;
+    --gray: #f0f0f0;
+    --font-s: "SF-ProText";
+    --font-i: "inter";
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-extrabold: 800;
+    --font-black: 900;
+  }
+}
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 2px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+html,
+body {
+  background: var(--body);
+  font-family: var(--font-s), sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+button,
+a {
+  &:hover {
+    cursor: pointer;
+  }
+}
+img {
+  user-select: none;
+}
