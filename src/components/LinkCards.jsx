@@ -40,10 +40,10 @@ const LinkCards = () => {
     <div className="my-[30px]">
       <div className="pl-5 md:px-5 md:max-w-[1320px] mx-auto">
         <div className="w-full mb-[30px]">
-          <div className="grid grid-cols-8 gap-9 lg:gap-[30px] overflow-auto md:overflow-auto">
+          <div className="grid grid-cards gap-9 lg:gap-[30px] overflow-scroll md:overflow-auto">
             {cards.map((card, i) => (
               <div
-                className=" md:mx-0 p-5 md:py-5 md:px-[30px] rounded-xl border border-gray bg-white flex items-center justify-center cursor-pointer "
+                className="flex-shrink-1 md:mx-0 p-5 md:py-5 md:px-[30px] rounded-xl border border-gray bg-white flex items-center justify-center cursor-pointer "
                 key={i}
               >
                 <div className="flex flex-col justify-center items-center">
@@ -66,8 +66,8 @@ const LinkCards = () => {
             ))}
           </div>
         </div>
-        <div className="w-full overflow-x-scroll md:overflow-auto">
-          <div className="grid grid-cols-4 gap-[30px]">
+        <div className="w-full overflow-x-scroll ">
+          <div className="grid grid-cards2 sm:grid-cols-4 gap-[30px]">
             {about.map((card, i) => (
               <div className={`${card.bg} rounded-xl`} key={i}>
                 <div className="flex items-center justify-start">

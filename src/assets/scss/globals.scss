@@ -54,3 +54,9 @@ a {
 img {
   user-select: none;
 }
+.grid-cards {
+  grid-template-columns: repeat(8, 133px);
+}
+.grid-cards2{
+  grid-template-columns: repeat(4, 300px);
+}

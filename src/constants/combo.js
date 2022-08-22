@@ -1,0 +1,78 @@
+import images from "./images";
+
+const combo = [
+  {
+    img: images.combo1,
+    title: "Combo Bomba",
+    text: `Семга, рис, сыр креметто чип...`,
+    cost: 475,
+    news: true,
+    xit: false,
+    new: true,
+  },
+  {
+    img: images.combo2,
+    title: "Combo Bomba",
+    text: `Сливочный сыр, тростниковым `,
+    cost: 395,
+    news: true,
+    xit: true,
+    new: false,
+  },
+  {
+    img: images.combo3,
+    title: "Combo Bomba",
+    text: `Действительно много семги..`,
+    cost: 425,
+    news: false,
+    xit: true,
+    new: false,
+  },
+  {
+    img: images.combo4,
+    title: "Combo Bomba",
+    text: `Тигровая креветка, ик...`,
+    cost: 525,
+    news: false,
+    xit: true,
+    new: false,
+  },
+  {
+    img: images.combo4,
+    title: "Combo Bomba",
+    text: ``,
+    cost: 525,
+    news: false,
+    xit: true,
+    new: false,
+  },
+  {
+    img: images.combo3,
+    title: "Combo Bomba",
+    text: ``,
+    cost: 425,
+    news: false,
+    xit: true,
+    new: false,
+  },
+  {
+    img: images.combo2,
+    title: "Combo Bomba",
+    text: ``,
+    cost: 475,
+    news: false,
+    xit: false,
+    new: true,
+  },
+  {
+    img: images.combo1,
+    title: "Combo Bomba",
+    text: ``,
+    cost: 395,
+    news: false,
+    xit: true,
+    new: false,
+  },
+];
+
+export default combo;

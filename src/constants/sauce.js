@@ -1,0 +1,78 @@
+import images from "./images";
+
+const sauce = [
+  {
+    img: images.sauce1,
+    title: "Соус",
+    text: `Семга, рис, сыр креметто, соус унаги, креветка, авокадо, чип...`,
+    cost: 475,
+    news: true,
+    xit: false,
+    new: true,
+  },
+  {
+    img: images.sauce2,
+    title: "Соус",
+    text: `Сливочный сыр, семга татаки с тростниковым сахаром, соус у...`,
+    cost: 395,
+    news: true,
+    xit: true,
+    new: false,
+  },
+  {
+    img: images.sauce3,
+    title: "Соус",
+    text: `Действительно много семги, сливочный сыр, огурец, рис, н...`,
+    cost: 425,
+    news: false,
+    xit: true,
+    new: false,
+  },
+  {
+    img: images.sauce4,
+    title: "Соус",
+    text: `Тигровая креветка, огурец, авокадо, соус Айоли, рис, ик...`,
+    cost: 525,
+    news: false,
+    xit: true,
+    new: false,
+  },
+  {
+    img: images.sauce4,
+    title: "Соус",
+    text: ``,
+    cost: 525,
+    news: false,
+    xit: true,
+    new: false,
+  },
+  {
+    img: images.sauce3,
+    title: "Соус",
+    text: ``,
+    cost: 425,
+    news: false,
+    xit: true,
+    new: false,
+  },
+  {
+    img: images.sauce2,
+    title: "Соус",
+    text: ``,
+    cost: 475,
+    news: false,
+    xit: false,
+    new: true,
+  },
+  {
+    img: images.sauce1,
+    title: "Соус",
+    text: ``,
+    cost: 395,
+    news: false,
+    xit: true,
+    new: false,
+  },
+];
+
+export default sauce;

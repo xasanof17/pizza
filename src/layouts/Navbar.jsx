@@ -19,7 +19,7 @@ const links = [
   { name: "Соусы", href: "/" },
   {
     name: "Другое",
-    href: "#!",
+    href: false,
     icon: true,
     dropdown: true,
   },
@@ -112,7 +112,25 @@ export default function Navbar() {
                 <ul className="hidden lg:flex items-center">
                   {links.map((link, i) => (
                     <li key={i}>
-                      <Link href={link.href}>
+                      {link.href ? (
+                        <Link href={link.href}>
+                          <a
+                            onClick={() =>
+                              link.dropdown && setDropDown((prev) => !prev)
+                            }
+                            className={`px-4 font-regular text-sm hover:text-primary ease-out duration-150 outline-primary ${
+                              link.icon && "flex items-center"
+                            }`}
+                          >
+                            {link.name}{" "}
+                            {link.icon && (
+                              <span className="ml-3">
+                                <BsChevronDown fontSize={17} />
+                              </span>
+                            )}
+                          </a>
+                        </Link>
+                      ) : (
                         <a
                           onClick={() =>
                             link.dropdown && setDropDown((prev) => !prev)
@@ -128,7 +146,7 @@ export default function Navbar() {
                             </span>
                           )}
                         </a>
-                      </Link>
+                      )}
                     </li>
                   ))}
                 </ul>
