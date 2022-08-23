@@ -163,9 +163,9 @@ const Menu = ({ title, filter, cards }) => {
         </div>
       </div>
       {show && (
-        <div className="fixed top-0 right-0 w-full bg-white sm:bg-inherit sm:backdrop-blur-lg h-full z-20 scroll-none overflow-y-scroll sm:overflow-y-auto">
+        <div className="fixed top-0 right-0 w-full bg-white sm:bg-inherit sm:backdrop-blur-lg h-full z-20 scroll-none overflow-y-scroll sm:overflow-y-hidden">
           <div className="lg:max-w-[520px] w-full h-full float-right bg-white pt-0 sm:pt-5 p-5 pb-3">
-            <div className="sticky top-0 left-0 bg-white py-3 sm:py-0 flex items-center justify-between mb-3">
+            <div className="sticky top-0 left-0 bg-white py-3 sm:py-0 flex items-center justify-between sm:mb-3">
               <h2 className="font-semibold text-[32px] leading-[40px]">
                 Фильтры
               </h2>
@@ -180,12 +180,12 @@ const Menu = ({ title, filter, cards }) => {
                 </button>
               </div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:flex flex-col">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 lg:flex flex-col pb-5 sm:pb-0">
               <Menus title={`Общее`} object={generals} />
               <Menus title={`Сыр`} object={cheese} />
               <Menus title={`Мясо`} object={meat} />
               <Menus title={`Компонент`} object={components} />
-              <div className="flex items-center pt-1 md:pt-4 border-t border-gray pb-2 sm:pb-0">
+              <div className="flex items-center  border-t border-gray py-3 sm:pt-1 md:pt-4 sm:pb-0 filter-btns px-3 sm:px-0">
                 <button
                   onClick={() => setActive((prv) => !prv)}
                   className="w-full mr-[10px] bg-transparent py-3 border border-primary text-sm font-regular rounded-md text-primary"
