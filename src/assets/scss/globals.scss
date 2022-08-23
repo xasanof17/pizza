@@ -67,7 +67,7 @@ img {
   }
 }
 .select-top{
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     display: none;
   }
 }
@@ -89,5 +89,17 @@ img {
     &::-webkit-scrollbar {
       display: none;
     }
+  }
+}
+.menu{
+  top: 13%;
+  @media (max-width: 414px) {
+    top: 16%;
+  }
+  @media (max-width: 390px) {
+    top: 17%;
+  }
+  @media (max-width: 375px) {
+    top: 14%;
   }
 }

@@ -206,7 +206,7 @@ export default function Navbar() {
                 </div>
               </div>
               {active && (
-                <div className="md:border-none border-t border-gray fixed top-[14%] sm:top-[16%] md:top-[17%] left-0 w-full h-full bg-white flex flex-col sm:flex-row items-start justify-start sm:justify-center">
+                <div className="md:border-none border-t border-gray fixed menu sm:top-[16%] md:top-[17%] left-0 w-full h-full bg-white flex flex-col sm:flex-row items-start justify-start sm:justify-center">
                   <div className="sm:hidden flex w-full py-5 border-b border-gray px-4">
                     <button className="mx-1 lg:mx-5 sm:hidden flex items-center">
                       <span className="flex items-center justify-center mr-2">
