@@ -80,7 +80,7 @@ const Menu = ({ title, filter, cards }) => {
   };
   const Menus = ({ title, object }) => {
     return (
-      <div className="flex flex-col md:my-2">
+      <div className="flex flex-col md:mt-2">
         <h3 className="text-[#A5A5A5] font-regular text-sm mb-3">{title}</h3>
         <ul className="flex flex-wrap max-w-[550px] w-full">
           {object.map((link, i) => (
@@ -165,7 +165,7 @@ const Menu = ({ title, filter, cards }) => {
       {show && (
         <div className="fixed top-0 right-0 w-full bg-white sm:bg-inherit sm:backdrop-blur-lg h-full z-20 scroll-none overflow-y-scroll sm:overflow-y-hidden">
           <div className="lg:max-w-[520px] w-full h-full float-right bg-white pt-0 sm:pt-5 p-5 pb-3">
-            <div className="sticky top-0 left-0 bg-white py-3 sm:py-0 flex items-center justify-between sm:mb-3">
+            <div className="sticky z-10 top-0 left-0 bg-white py-3 sm:py-0 flex items-center justify-between sm:mb-3">
               <h2 className="font-semibold text-[32px] leading-[40px]">
                 Фильтры
               </h2>
