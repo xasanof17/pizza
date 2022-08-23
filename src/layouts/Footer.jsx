@@ -22,7 +22,7 @@ export default function Footer() {
                   </span>
                 </a>
               </Link>
-              <p>© Copyright 2021 — Куда Пицца</p>
+              <p className='text-sm text-black mt-2'>© Copyright 2022 — Куда Пицца</p>
             </div>
             <div className="flex flex-col">
               <h3 className="font-semibold text-sm">Куда пицца</h3>

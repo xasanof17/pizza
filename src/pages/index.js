@@ -20,7 +20,7 @@ export default function Home() {
       <Menu title={`Напитки`} filter={false} cards={drinks} />
       <Menu title={`Соусы`} filter={false} cards={sauce} />
       <Menu title={`Комбо`} filter={false} cards={combo} />
-      <h1 className="text-3xl font-bold underline">Хеллоу беби!</h1>
+      {/* <h1 className="text-3xl font-bold underline">Хеллоу беби!</h1> */}
     </section>
   );
 }

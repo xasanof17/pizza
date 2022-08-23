@@ -37,25 +37,25 @@ const about = [
 
 const LinkCards = () => {
   return (
-    <div className="my-[30px]">
+    <div className="my-5 sm:my-[30px]">
       <div className="pl-5 md:px-5 md:max-w-[1320px] mx-auto">
-        <div className="w-full mb-[30px]">
-          <div className="grid grid-cards gap-9 lg:gap-[30px] overflow-scroll md:overflow-auto">
+        <div className="w-full mb-5 sm:mb-[30px]">
+          <div className="grid grid-cards gap-3 sm:gap-5 md:gap-9 lg:gap-[30px] pb-[2px] md:p-0 overflow-scroll md:overflow-auto">
             {cards.map((card, i) => (
               <div
-                className="flex-shrink-1 md:mx-0 p-5 md:py-5 md:px-[30px] rounded-xl border border-gray bg-white flex items-center justify-center cursor-pointer "
+                className="flex-shrink-1 md:mx-0 py-3 md:py-5 md:px-[30px] rounded-xl border border-gray bg-white flex items-center justify-center cursor-pointer "
                 key={i}
               >
-                <div className="flex flex-col justify-center items-center">
-                  <div className="flex items-center justify-center w-[32px] h-[32px]">
+                <div className="flex flex-row sm:flex-col justify-center items-center">
+                  <div className="flex items-center justify-center w-5 h-5 sm:w-[32px] sm:h-[32px]">
                     <Image
                       src={card.icon}
                       alt="icon"
-                      className="w-full h-full"
+                      className="w-5 h-5 sm:w-full"
                     />
                   </div>
                   <p
-                    className={`mt-2 font-regular text-[18px] leading-6 ${
+                    className={`ml-2 sm:ml-0 sm:mt-2 font-regular text-[14px] sm:text-[18px] leading-4 sm:leading-6 ${
                       card.red ? "text-red" : "text-black"
                     }`}
                   >
@@ -66,8 +66,8 @@ const LinkCards = () => {
             ))}
           </div>
         </div>
-        <div className="w-full overflow-x-scroll ">
-          <div className="grid grid-cards2 sm:grid-cols-4 gap-[30px]">
+        <div className="w-full">
+          <div className="grid grid-cards2 md:grid-cols-4 gap-5 sm:gap-[30px] overflow-scroll md:overflow-auto">
             {about.map((card, i) => (
               <div className={`${card.bg} rounded-xl`} key={i}>
                 <div className="flex items-center justify-start">

@@ -54,9 +54,40 @@ a {
 img {
   user-select: none;
 }
+.nav-top{
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+  @media (max-width: 450px) {
+    font-size: 12px !important;
+  }
+  @media (max-width: 320px) {
+    justify-content: center;
+  }
+}
+.select-top{
+  @media (max-width: 320px) {
+    display: none;
+  }
+}
 .grid-cards {
   grid-template-columns: repeat(8, 133px);
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(8, 100px);
+  }
+  @media (max-width: 450px) {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }
-.grid-cards2{
+.grid-cards2 {
   grid-template-columns: repeat(4, 300px);
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(4, 280px);
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 }

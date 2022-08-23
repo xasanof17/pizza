@@ -8,7 +8,7 @@ const Menu = ({ title, filter, cards }) => {
       <div className="container">
         <div className="flex flex-col">
           <div className="flex items-center justify-between mb-[30px]">
-            <h2 className="font-semibold text-[40px] leading-[46px]">
+            <h2 className="font-semibold text-lg sm:text-[40px] leading-[46px]">
               {title}
             </h2>
             {filter && (
@@ -25,7 +25,7 @@ const Menu = ({ title, filter, cards }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 md:gap-4 lg:gap-[24px]">
             {cards.map((card, i) => (
               <div
-                className="bg-white border border-gray rounded-xl h-[470px] relative"
+                className="bg-white border border-gray rounded-xl w-full h-[470px] relative"
                 key={i}
               >
                 <div className="flex flex-col">
@@ -45,9 +45,7 @@ const Menu = ({ title, filter, cards }) => {
                     <Image
                       src={card.img}
                       alt="img"
-                      height={300}
-                      width={300}
-                      className="w-full rounded-t-xl"
+                      className="w-full sm:w-[300px] h-[300px] rounded-t-xl"
                     />
                   </div>
                   <div className="p-5 h-[168px] flex flex-col justify-end">

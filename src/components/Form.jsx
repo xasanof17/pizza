@@ -1,5 +1,7 @@
+import Image from "next/image";
 import React from "react";
 import { VscLocation } from "react-icons/vsc";
+import { images } from "../constants";
 
 const Form = () => {
   return (
@@ -24,8 +26,16 @@ const Form = () => {
                     <VscLocation className="text-primary" fontSize={28} />
                   </span>
                 </div>
+                <button
+                  type="submit"
+                  className="sm:hidden flex items-center justify-center h-full p-4 absolute right-0 top-0 lg:h-full rounded-lg bg-primary text-white text-sm font-regular outline-gray"
+                >
+                  <span className="flex items-center justify-center">
+                    <Image src={images.telegram} alt="tg" />
+                  </span>
+                </button>
               </div>
-              <div className="flex items-center">
+              <div className="hidden sm:flex items-center">
                 <button
                   type="submit"
                   className="w-full py-4 lg:h-full rounded-lg bg-primary text-white text-sm font-regular outline-gray"

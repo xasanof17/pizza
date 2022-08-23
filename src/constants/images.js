@@ -7,6 +7,7 @@ import pizza from "../assets/img/icons/pizza.svg";
 import sauces from "../assets/img/icons/sauces.svg";
 import snacks from "../assets/img/icons/snacks.svg";
 import sushi from "../assets/img/icons/sushi.svg";
+import telegram from "../assets/img/icons/telegram.svg";
 // other images
 import logo from "../assets/img/logo.svg";
 import pizzaDelivery from "../assets/img/pizza.svg";
@@ -87,6 +88,7 @@ const images = {
   combo2,
   combo3,
   combo4,
+  telegram
 };
 
 export default images;
