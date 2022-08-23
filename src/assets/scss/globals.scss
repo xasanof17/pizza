@@ -54,7 +54,7 @@ a {
 img {
   user-select: none;
 }
-.nav-top{
+.nav-top {
   @media (max-width: 768px) {
     width: 100%;
     justify-content: space-between;
@@ -66,7 +66,7 @@ img {
     justify-content: center;
   }
 }
-.select-top{
+.select-top {
   @media (max-width: 390px) {
     display: none;
   }
@@ -91,15 +91,9 @@ img {
     }
   }
 }
-.menu{
-  top: 13%;
-  @media (max-width: 414px) {
-    top: 16%;
-  }
-  @media (max-width: 390px) {
-    top: 17%;
-  }
-  @media (max-width: 375px) {
-    top: 14%;
+
+.scroll-none {
+  &::-webkit-scrollbar {
+    display: none;
   }
 }

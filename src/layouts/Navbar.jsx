@@ -197,7 +197,7 @@ export default function Navbar() {
                   >
                     <span>
                       {active ? (
-                        <MdClose fontSize={30} />
+                        <MdClose fontSize={30} className="sm:flex hidden" />
                       ) : (
                         <AiOutlineMenu fontSize={30} />
                       )}
@@ -206,8 +206,8 @@ export default function Navbar() {
                 </div>
               </div>
               {active && (
-                <div className="md:border-none border-t border-gray fixed menu sm:top-[16%] md:top-[17%] left-0 w-full h-full bg-white flex flex-col sm:flex-row items-start justify-start sm:justify-center">
-                  <div className="sm:hidden flex w-full py-5 border-b border-gray px-4">
+                <div className="md:border-none bg-white border-t border-gray fixed top-0 sm:top-[21%] md:top-[19%] left-0 w-full h-full flex flex-col sm:flex-row items-start justify-start sm:justify-center">
+                  <div className="sm:hidden flex items-center justify-between w-full py-5 border-b border-gray px-4">
                     <button className="mx-1 lg:mx-5 sm:hidden flex items-center">
                       <span className="flex items-center justify-center mr-2">
                         <FiUser fontSize={25} className="text-primary" />
@@ -216,6 +216,13 @@ export default function Navbar() {
                         Войти в аккаунт
                       </p>
                     </button>
+                    <button
+                      onClick={() => setActive((prev) => !prev)}
+                      className="sm:hidden flex items-center justify-center"
+                    >
+                      {" "}
+                      <MdClose fontSize={30} />
+                    </button>
                   </div>
                   <ul className="flex flex-col md:flex-row items-start sm:items-center mx-5 sm:my-9">
                     {links.map((link, i) => (
@@ -223,7 +230,9 @@ export default function Navbar() {
                         <Link href={link.href}>
                           <a
                             onClick={() =>
-                              link.dropdown && setDropDown((prev) => !prev)
+                              link.dropdown &&
+                              setDropDown((prev) => !prev) &&
+                              setActive((prev) => !prev)
                             }
                             className={`py-4 md:px-4 block font-regular text-sm hover:text-primary ease-out duration-150 outline-primary ${
                               link.icon && "flex items-center"
